@@ -1,10 +1,9 @@
-import socket
 import os
-import threading
 import sys
-from time import sleep
-from cryptography.fernet import Fernet
 import random
+import socket
+import threading
+from time import sleep
 
 print('welcome to PyChat')
 
@@ -20,10 +19,8 @@ def username():
         loading()
 
 def xor_encrypt_decrypt(message, key):
-    # Convert key to a list of smaller integers
     key = [int(digit) for digit in str(key)]
     
-    # Encrypt/Decrypt the message
     encrypted_chars = [
         chr(ord(char) ^ key[i % len(key)]) for i, char in enumerate(message)
     ]
@@ -152,9 +149,3 @@ x = threading.Thread(target=listening)
 x.daemon = True
 x.start()
 sending()
-
-# need to add:
-    # usernames - done
-    # client check - done
-    # logout command - done
-    # always on - done
