@@ -68,8 +68,8 @@ def loading():
 
 username()
 
-HOST = "147.182.247.60"
-PORT = 4444
+HOST = "REPLACE WITH SERVER IP"
+PORT = REPLACE WITH SERVER PORT
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
