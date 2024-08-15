@@ -1,8 +1,7 @@
 import socket
-from time import sleep
-import threading
-import sys
 import random
+import threading
+from time import sleep
 from sympy import nextprime
 
 HOST = "REPLACE WITH SERVER IP"
