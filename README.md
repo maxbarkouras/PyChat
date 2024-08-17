@@ -13,13 +13,15 @@ Follow these simple steps to setup your server and use PyChat:
 
 ### Installation
 
-1. Download the server.py to your VPS, and client.py to both parties that will be chatting
+1. Download the server.py and requirements.txt to your VPS, and client.py to both parties that will be chatting
 
 2. In all instances of the client.py and server.py YOU MUST CHANGE the host ip address to the external ip of your server
 
-3. Launch the server with ```python3 server.py``` and wait for the "mod and base generated. now listening..." output
+3. On the server, install the requirements from requirments.txt using ```pip3 install -r requirements.txt```
+
+4. Launch the server with ```python3 server.py``` and wait for the "mod and base generated. now listening..." output
    
-4. Launch the clients on both machines with ```python3 client.py``` and you should be connected!
+5. Launch the clients on both machines with ```python3 client.py``` and you should be connected!
 
 ---
 
