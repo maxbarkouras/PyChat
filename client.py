@@ -35,10 +35,10 @@ def xor_encrypt_decrypt(message, key):
 
 #define function for PyChat startup, just so it looks pretty
 def loading():
-    #if using linux run 'cls'
+    #if using linux run 'clear'
     if os.name == 'posix':
         os.system('clear')
-    #if using windows run 'clear'
+    #if using windows run 'cls'
     else:
         os.system('cls')
 
