@@ -98,6 +98,10 @@ def client2():
     global data2
     global key
     activeusr = activeusr+1
+    #loop until second client connects
+    while activeusr < 2:
+        conn.send(('1AU').encode('UTF-8'))
+        sleep(0.5)
     #send base and modular to client
     conn.send((f'{base}:esab').encode('UTF-8'))
     conn.send((f'{mod}:dom').encode('UTF-8'))
@@ -122,6 +126,7 @@ def client2():
         global data1
         global data2
         global activeusr
+        
         #while exit signal is not active receive the data
         while exitsig2 == 1:
             #assign data1 variable with received data
